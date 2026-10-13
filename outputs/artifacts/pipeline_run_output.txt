@@ -1,0 +1,28 @@
+﻿=== BUILD TRAINING FEATURES OUTPUT ===
+Building features as of 2026-08-01...
+  Built 1500 rows x 9 columns
+  Running quality checks...
+  [OK] All quality checks passed
+  Registering features in the feature store...
+    [OK] tenure_days registered as v2
+    [OK] days_since_last_txn registered as v2
+    [OK] txn_count_lookback registered as v3
+    [OK] gross_spend_lookback registered as v3
+    [OK] avg_txn_value_lookback registered as v2
+    [OK] return_count_lookback registered as v2
+    [OK] active_months_12m registered as v2
+    [OK] gross_spend_lookback v4 (60-day) registered
+    [OK] txn_count_lookback v4 (90-day) registered
+
+[DONE] Build complete. Feature store updated with 7 features (gross_spend_lookback and txn_count_lookback have 2 versions each).
+=== SCORE CUSTOMER OUTPUT ===
+Scoring features for customer(s) [2] as of 2026-08-01...
+
+  Customer 2:
+    tenure_days: 703
+    days_since_last_txn: 2
+    txn_count_lookback: 2
+    gross_spend_lookback: 136.62
+    avg_txn_value_lookback: 68.31
+    return_count_lookback: 0
+    active_months_12m: 6
