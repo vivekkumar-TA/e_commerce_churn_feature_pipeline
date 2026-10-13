@@ -1,0 +1,50 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\vivek.kumar01\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\vivek.kumar01\Documents\Stack AI\StackAI Rewire\e_commerce_churn_feature_pipeline
+configfile: pytest.ini
+plugins: anyio-4.14.2
+collecting ... collected 40 items
+
+tests/test_feature_store.py::TestGrossSpendLookback::test_register_and_retrieve_v1_and_v2 PASSED [  2%]
+tests/test_feature_store.py::TestGrossSpendLookback::test_is_latest_points_to_highest_version PASSED [  5%]
+tests/test_feature_store.py::TestGrossSpendLookback::test_list_versions_returns_distinct_parquet_paths PASSED [  7%]
+tests/test_feature_store.py::TestTxnCountLookback::test_register_and_retrieve_v1_and_v2 PASSED [ 10%]
+tests/test_feature_store.py::TestTxnCountLookback::test_is_latest_points_to_highest_version PASSED [ 12%]
+tests/test_feature_store.py::TestTxnCountLookback::test_list_versions_returns_distinct_parquet_paths PASSED [ 15%]
+tests/test_parity.py::test_training_and_scoring_paths_agree_for_same_customer PASSED [ 17%]
+tests/test_parity.py::test_parity_zero_activity_customer PASSED          [ 20%]
+tests/test_quality_checks.py::test_null_check_fires_on_injected_null PASSED [ 22%]
+tests/test_quality_checks.py::test_null_check_passes_on_clean_input PASSED [ 25%]
+tests/test_quality_checks.py::test_positive_spend_fires_on_negative_value PASSED [ 27%]
+tests/test_quality_checks.py::test_positive_spend_passes_on_clean_input PASSED [ 30%]
+tests/test_quality_checks.py::test_customer_spine_fires_on_wrong_count PASSED [ 32%]
+tests/test_quality_checks.py::test_customer_spine_passes_on_exact_match PASSED [ 35%]
+tests/test_quality_checks.py::test_recency_bounds_fires_on_negative PASSED [ 37%]
+tests/test_quality_checks.py::test_recency_bounds_fires_when_exceeds_tenure PASSED [ 40%]
+tests/test_quality_checks.py::test_recency_bounds_passes_on_clean_input PASSED [ 42%]
+tests/test_quality_checks.py::test_checks_do_not_false_positive_on_clean_input PASSED [ 45%]
+tests/test_quality_checks.py::test_run_all_raises_on_bad_input PASSED    [ 47%]
+tests/test_transforms.py::TestTenureDays::test_normal_case PASSED        [ 50%]
+tests/test_transforms.py::TestTenureDays::test_zero_activity_case PASSED [ 52%]
+tests/test_transforms.py::TestTenureDays::test_single_record_case PASSED [ 55%]
+tests/test_transforms.py::TestDaysSinceLastTxn::test_normal_case PASSED  [ 57%]
+tests/test_transforms.py::TestDaysSinceLastTxn::test_zero_activity_case PASSED [ 60%]
+tests/test_transforms.py::TestDaysSinceLastTxn::test_single_record_case PASSED [ 62%]
+tests/test_transforms.py::TestTxnCountLookback::test_normal_case PASSED  [ 65%]
+tests/test_transforms.py::TestTxnCountLookback::test_zero_activity_case PASSED [ 67%]
+tests/test_transforms.py::TestTxnCountLookback::test_time_window_boundary PASSED [ 70%]
+tests/test_transforms.py::TestTxnCountLookback::test_returned_txns_excluded PASSED [ 72%]
+tests/test_transforms.py::TestGrossSpendLookback::test_normal_case PASSED [ 75%]
+tests/test_transforms.py::TestGrossSpendLookback::test_zero_activity_case PASSED [ 77%]
+tests/test_transforms.py::TestGrossSpendLookback::test_returns_excluded PASSED [ 80%]
+tests/test_transforms.py::TestAvgTxnValueLookback::test_normal_case PASSED [ 82%]
+tests/test_transforms.py::TestAvgTxnValueLookback::test_zero_activity_case PASSED [ 85%]
+tests/test_transforms.py::TestAvgTxnValueLookback::test_zero_purchase_window PASSED [ 87%]
+tests/test_transforms.py::TestReturnCountLookback::test_normal_case PASSED [ 90%]
+tests/test_transforms.py::TestReturnCountLookback::test_zero_activity_case PASSED [ 92%]
+tests/test_transforms.py::TestActiveMonths12m::test_normal_case PASSED   [ 95%]
+tests/test_transforms.py::TestActiveMonths12m::test_zero_activity_case PASSED [ 97%]
+tests/test_transforms.py::TestActiveMonths12m::test_window_boundary PASSED [100%]
+
+============================= 40 passed in 8.68s ==============================
