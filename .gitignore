@@ -1,0 +1,11 @@
+﻿.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.class
+.pytest_cache/
+.DS_Store
+*.docx
+*.xlsx
+"Stack AI Rewire - DS  - Churn Feature Pipeline - Assignment Doc.docx"
+"Stack AI Rewire - DS  - Churn Feature Pipeline - Evaluation Rubric.xlsx"
